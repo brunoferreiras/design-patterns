@@ -12,7 +12,7 @@ namespace Brunoferreiras\Creational\FactoryMethod;
  * Isso permite alterar o tipo de produto que está sendo criado pelas
  * subclasses do SocialNetworkPoster.
  */
-abstract class SocialNetworkPoster
+interface SocialNetworkPoster
 {
     /**
      * O método de fábrica real. Observe que ele retorna o conector
@@ -21,18 +21,5 @@ abstract class SocialNetworkPoster
      *
      * @return SocialNetworkConnector
      */
-    abstract public function getSocialNetwork(): SocialNetworkConnector;
-
-    /**
-     * Quando o método de fábrica é usado dentro da regra de negócios do
-     * do criador, as subclasses podem alterar a lógica indiretamente retornando diferentes tipos de conector do método de fábrica.
-     */
-    public function post($content): void
-    {
-        $network = $this->getSocialNetwork();
-
-        $network->logIn();
-        $network->createPost($content);
-        $network->logout();
-    }
+    public function getSocialNetwork(): SocialNetworkConnector;
 }

@@ -11,6 +11,10 @@
     "autoload": {
         "psr-4": {
             "Brunoferreiras\\": "src"
-        }
+        },
+        "classmap": ["src/"]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2"
     }
 }

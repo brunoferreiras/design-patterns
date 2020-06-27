@@ -7,7 +7,7 @@ namespace Brunoferreiras\Creational\FactoryMethod;
  * também hera o método 'post' da classe pai.
  * Criadores concretos são as classes que o cliente realmente usa.
  */
-class FacebookPoster extends SocialNetworkPoster
+class FacebookPoster implements SocialNetworkPoster
 {
     private string $login;
     private string $password;

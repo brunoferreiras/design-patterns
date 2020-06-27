@@ -5,7 +5,7 @@ namespace Brunoferreiras\Creational\FactoryMethod;
 /**
  * Esse criador é suporta o LinkedIn.
  */
-class LinkedInPoster extends SocialNetworkPoster
+class LinkedInPoster implements SocialNetworkPoster
 {
     private string $email;
     private string $password;
