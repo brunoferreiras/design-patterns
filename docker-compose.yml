@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+    app:
+        image: ambientum/php:7.4-nginx
+        restart: on-failure
+        container_name: design-patterns
+        volumes:
+            - .:/var/www/app

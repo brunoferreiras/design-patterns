@@ -1,0 +1,16 @@
+{
+    "name": "brunoferreiras/src",
+    "description": "Learning Design Patterns",
+    "authors": [
+        {
+            "name": "Bruno Ferreira",
+            "email": "fs.brunoferreira@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Brunoferreiras\\": "src"
+        }
+    }
+}
